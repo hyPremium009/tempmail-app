@@ -1,53 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HyPremium</title>
-<link rel="stylesheet" href="style.css">
+  <title>Temp Mail</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="navbar">
-  <div></div>
-  <h1 class="logo">HyPremium ✉️</h1>
+  <h1>📩 TEMP MAIL INBOX</h1>
 
-  <div class="right">
-    <button onclick="openAuth()">Login</button>
-    <div id="userBox" class="user" style="display:none;">H</div>
-  </div>
-</div>
+  <div id="emailList"></div>
 
-<div class="container">
-
-  <div class="card">
-    <h3>Your Email Address</h3>
-
-    <div class="email-wrapper">
-      <div class="email-left" id="emailText">Belum ada email</div>
-      <button class="icon-btn" onclick="copyEmail()">📋</button>
-    </div>
-
-    <div>
-      <button onclick="refreshInbox()">Refresh</button>
-      <button onclick="customEmail()">New</button>
-      <button onclick="deleteEmail()">Delete</button>
-    </div>
-  </div>
-
-  <div id="result">Inbox kosong</div>
-
-</div>
-
-<!-- AUTH -->
-<div id="authBox" class="auth-box" style="display:none;">
-  <h3 id="authTitle">Login</h3>
-
-  <input id="username" placeholder="Username"><br><br>
-  <input id="password" type="password" placeholder="Password"><br><br>
-
-  <button onclick="submitAuth()">Submit</button>
-  <p onclick="toggleAuth()">Belum punya akun? Register</p>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
